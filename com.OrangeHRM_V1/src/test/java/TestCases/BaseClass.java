@@ -1,18 +1,24 @@
 package TestCases;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -37,7 +43,7 @@ public class BaseClass {
 	//String browser = properties.getProperty("BrowserName");
 
 
-	@BeforeTest
+	@BeforeSuite
 	//@Parameters("browser")
 	public void Setup() throws IOException
 	{
@@ -83,15 +89,21 @@ public class BaseClass {
 
 	}
 
-	@AfterTest
+	@AfterSuite
 	public  void TearDown() 
 	{
 		driver.quit();
 		logger.info("browser is closed");
 
 	}
-
-
+	public void CaptureScreenShot(WebDriver driver , String tname) throws IOException
+	{
+	TakesScreenshot ts = (TakesScreenshot)driver;
+	File src= ts.getScreenshotAs(OutputType.FILE);
+	File dest = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");
+	FileUtils.copyFile(src, dest);
+	
+	}
 
 
 

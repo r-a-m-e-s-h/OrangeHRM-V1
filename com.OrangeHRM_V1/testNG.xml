@@ -7,12 +7,12 @@
 
 <parameter name="browser" value="chrome" />
 
-
-
 <classes>
 
 <class name = "TestCases.Login_TestCase001" />
-
+<class name= "TestCases.AdminPage_TestCase002" />
+<class name= "TestCases.PimPage_TestCase003" />
+<class name = "TestCases.LeavePage_TestCase004" />
 
 </classes>
 

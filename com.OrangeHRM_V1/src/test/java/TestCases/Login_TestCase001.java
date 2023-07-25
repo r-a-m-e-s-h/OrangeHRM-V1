@@ -1,5 +1,7 @@
 package TestCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
@@ -8,7 +10,7 @@ public class Login_TestCase001 extends BaseClass {
 
 	
 	@Test
-	public void loginTC() 
+	public void loginTC() throws IOException 
 	{
 		
 		LoginPage lp = new LoginPage(driver);
@@ -28,7 +30,7 @@ public class Login_TestCase001 extends BaseClass {
 		lp.clickLogoutBtn();
 		logger.info("Logout btn is clicked");
 		
-				
+		CaptureScreenShot(driver, "LoginPage");	
 		
 	}
 	

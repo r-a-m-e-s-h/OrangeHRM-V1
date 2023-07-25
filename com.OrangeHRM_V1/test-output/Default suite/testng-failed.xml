@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.Login_TestCase001">
+      <class name="TestCases.PimPage_TestCase003">
         <methods>
-          <include name="loginTC"/>
           <include name="Setup"/>
+          <include name="TearDown"/>
+          <include name="PimTestCase"/>
         </methods>
-      </class> <!-- TestCases.Login_TestCase001 -->
+      </class> <!-- TestCases.PimPage_TestCase003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
