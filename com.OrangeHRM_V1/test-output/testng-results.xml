@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-25T21:46:16 IST" name="OrangeHRM_Testing_Suite" finished-at="2023-07-25T21:46:34 IST" duration-ms="17983">
+    <groups>
+    </groups>
+    <test started-at="2023-07-25T21:46:16 IST" name="OrangeHRM Test" finished-at="2023-07-25T21:46:34 IST" duration-ms="17983">
+      <class name="TestCases.Login_TestCase001">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestCases.Login_TestCase001@6be968ce]" started-at="2023-07-25T21:46:16 IST" name="Setup" finished-at="2023-07-25T21:46:29 IST" duration-ms="13527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="loginTC()[pri:0, instance:TestCases.Login_TestCase001@6be968ce]" started-at="2023-07-25T21:46:29 IST" name="loginTC" finished-at="2023-07-25T21:46:33 IST" duration-ms="3918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.Login_TestCase001@6be968ce]" started-at="2023-07-25T21:46:33 IST" name="TearDown" finished-at="2023-07-25T21:46:34 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- TestCases.Login_TestCase001 -->
+    </test> <!-- OrangeHRM Test -->
+  </suite> <!-- OrangeHRM_Testing_Suite -->
+</testng-results>
