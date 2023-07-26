@@ -14,6 +14,8 @@
 <class name = "TestCases.PimPage_TestCase003" />
 <class name = "TestCases.LeavePage_TestCase004" />
 <class name = "TestCases.TimePage_TestCase005" />
+<class name = "TestCases.RecuirementPage_TestCase006" />
+<class name = "TestCases.MyInfo_TestCase007" />
 
 </classes>
 
