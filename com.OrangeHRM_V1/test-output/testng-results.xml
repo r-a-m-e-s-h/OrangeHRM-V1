@@ -1,57 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-26T17:05:30 IST" name="OrangeHRM_Testing_Suite" finished-at="2023-07-26T17:05:42 IST" duration-ms="12007">
+  <suite started-at="2023-07-27T00:43:50 IST" name="OrangeHRM_Testing_Suite" finished-at="2023-07-27T00:44:29 IST" duration-ms="38879">
     <groups>
     </groups>
-    <test started-at="2023-07-26T17:05:30 IST" name="OrangeHRM Test" finished-at="2023-07-26T17:05:42 IST" duration-ms="12007">
+    <test started-at="2023-07-27T00:43:50 IST" name="OrangeHRM Test" finished-at="2023-07-27T00:44:29 IST" duration-ms="38879">
       <class name="TestCases.MyInfo_TestCase007">
-        <test-method signature="MyInfo_Test()[pri:0, instance:TestCases.MyInfo_TestCase007@533bda92]" started-at="2023-07-26T17:05:40 IST" name="MyInfo_Test" finished-at="2023-07-26T17:05:42 IST" duration-ms="2299" status="PASS">
+        <test-method signature="MyInfo_Test()[pri:0, instance:TestCases.MyInfo_TestCase007@514646ef]" started-at="2023-07-27T00:43:53 IST" name="MyInfo_Test" finished-at="2023-07-27T00:44:29 IST" duration-ms="36024" status="FAIL">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "i"
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "i"
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at pageObjects.MyInfoPage.SelectNationality(MyInfoPage.java:127)
+at TestCases.MyInfo_TestCase007.MyInfo_Test(MyInfo_TestCase007.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyInfo_Test -->
       </class> <!-- TestCases.MyInfo_TestCase007 -->
-      <class name="TestCases.AdminPage_TestCase002">
-        <test-method signature="AdminpageTest()[pri:0, instance:TestCases.AdminPage_TestCase002@548a24a]" started-at="2023-07-26T17:05:33 IST" name="AdminpageTest" finished-at="2023-07-26T17:05:34 IST" duration-ms="1419" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminpageTest -->
-      </class> <!-- TestCases.AdminPage_TestCase002 -->
-      <class name="TestCases.TimePage_TestCase005">
-        <test-method signature="TimePage_test()[pri:0, instance:TestCases.TimePage_TestCase005@3f4faf53]" started-at="2023-07-26T17:05:37 IST" name="TimePage_test" finished-at="2023-07-26T17:05:38 IST" duration-ms="1483" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TimePage_test -->
-      </class> <!-- TestCases.TimePage_TestCase005 -->
-      <class name="TestCases.LeavePage_TestCase004">
-        <test-method signature="LeavePageTest()[pri:0, instance:TestCases.LeavePage_TestCase004@2a693f59]" started-at="2023-07-26T17:05:35 IST" name="LeavePageTest" finished-at="2023-07-26T17:05:37 IST" duration-ms="1331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LeavePageTest -->
-      </class> <!-- TestCases.LeavePage_TestCase004 -->
-      <class name="TestCases.PimPage_TestCase003">
-        <test-method signature="PimTestCase()[pri:0, instance:TestCases.PimPage_TestCase003@433defed]" started-at="2023-07-26T17:05:34 IST" name="PimTestCase" finished-at="2023-07-26T17:05:35 IST" duration-ms="1138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PimTestCase -->
-      </class> <!-- TestCases.PimPage_TestCase003 -->
-      <class name="TestCases.RecuirementPage_TestCase006">
-        <test-method signature="Recuirement_Test()[pri:0, instance:TestCases.RecuirementPage_TestCase006@7fd50002]" started-at="2023-07-26T17:05:38 IST" name="Recuirement_Test" finished-at="2023-07-26T17:05:39 IST" duration-ms="1256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Recuirement_Test -->
-      </class> <!-- TestCases.RecuirementPage_TestCase006 -->
       <class name="TestCases.Login_TestCase001">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:TestCases.Login_TestCase001@514646ef]" started-at="2023-07-26T17:05:15 IST" name="Setup" finished-at="2023-07-26T17:05:30 IST" duration-ms="15112" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestCases.Login_TestCase001@2b30a42c]" started-at="2023-07-27T00:43:37 IST" name="Setup" finished-at="2023-07-27T00:43:50 IST" duration-ms="12571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="loginTC()[pri:0, instance:TestCases.Login_TestCase001@514646ef]" started-at="2023-07-26T17:05:30 IST" name="loginTC" finished-at="2023-07-26T17:05:33 IST" duration-ms="2911" status="PASS">
+        <test-method signature="loginTC()[pri:0, instance:TestCases.Login_TestCase001@2b30a42c]" started-at="2023-07-27T00:43:50 IST" name="loginTC" finished-at="2023-07-27T00:43:53 IST" duration-ms="2759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTC -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.Login_TestCase001@514646ef]" started-at="2023-07-26T17:05:42 IST" name="TearDown" finished-at="2023-07-26T17:05:42 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.Login_TestCase001@2b30a42c]" started-at="2023-07-27T00:44:29 IST" name="TearDown" finished-at="2023-07-27T00:44:29 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

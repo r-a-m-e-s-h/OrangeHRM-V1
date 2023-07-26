@@ -9,16 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRM_Testing_Suite</th></tr>
-<tr><td><a href="#t0">OrangeHRM Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,007</td><td></td><td></td></tr>
+<tr><td><a href="#t0">OrangeHRM Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,879</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM_Testing_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRM Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.AdminPage_TestCase002</td><td><a href="#m0">AdminpageTest</a></td><td rowspan="1">1690371333339</td><td rowspan="1">1419</td></tr><tr class="passedodd"><td rowspan="1">TestCases.LeavePage_TestCase004</td><td><a href="#m1">LeavePageTest</a></td><td rowspan="1">1690371335914</td><td rowspan="1">1331</td></tr><tr class="passedeven"><td rowspan="1">TestCases.Login_TestCase001</td><td><a href="#m2">loginTC</a></td><td rowspan="1">1690371330352</td><td rowspan="1">2911</td></tr><tr class="passedodd"><td rowspan="1">TestCases.MyInfo_TestCase007</td><td><a href="#m3">MyInfo_Test</a></td><td rowspan="1">1690371340003</td><td rowspan="1">2299</td></tr><tr class="passedeven"><td rowspan="1">TestCases.PimPage_TestCase003</td><td><a href="#m4">PimTestCase</a></td><td rowspan="1">1690371334772</td><td rowspan="1">1138</td></tr><tr class="passedodd"><td rowspan="1">TestCases.RecuirementPage_TestCase006</td><td><a href="#m5">Recuirement_Test</a></td><td rowspan="1">1690371338738</td><td rowspan="1">1256</td></tr><tr class="passedeven"><td rowspan="1">TestCases.TimePage_TestCase005</td><td><a href="#m6">TimePage_test</a></td><td rowspan="1">1690371337248</td><td rowspan="1">1483</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM_Testing_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRM Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.MyInfo_TestCase007</td><td><a href="#m0">MyInfo_Test</a></td><td rowspan="1">1690398833378</td><td rowspan="1">36024</td></tr><tr><th colspan="4">OrangeHRM Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.Login_TestCase001</td><td><a href="#m1">loginTC</a></td><td rowspan="1">1690398830590</td><td rowspan="1">2759</td></tr></tbody>
 </table>
-<h2>OrangeHRM Test</h2><h3 id="m0">TestCases.AdminPage_TestCase002#AdminpageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.LeavePage_TestCase004#LeavePageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCases.Login_TestCase001#loginTC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCases.MyInfo_TestCase007#MyInfo_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCases.PimPage_TestCase003#PimTestCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestCases.RecuirementPage_TestCase006#Recuirement_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestCases.TimePage_TestCase005#TimePage_test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>OrangeHRM Test</h2><h3 id="m0">TestCases.MyInfo_TestCase007#MyInfo_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;i&quot;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at pageObjects.MyInfoPage.SelectNationality(MyInfoPage.java:127)
+	at TestCases.MyInfo_TestCase007.MyInfo_Test(MyInfo_TestCase007.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.Login_TestCase001#loginTC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

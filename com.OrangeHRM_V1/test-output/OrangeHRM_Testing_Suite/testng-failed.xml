@@ -4,12 +4,13 @@
   <test thread-count="5" name="OrangeHRM Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.AdminPage_TestCase002">
+      <class name="TestCases.MyInfo_TestCase007">
         <methods>
           <include name="Setup"/>
-          <include name="AdminpageTest"/>
+          <include name="TearDown"/>
+          <include name="MyInfo_Test"/>
         </methods>
-      </class> <!-- TestCases.AdminPage_TestCase002 -->
+      </class> <!-- TestCases.MyInfo_TestCase007 -->
     </classes>
   </test> <!-- OrangeHRM Test(failed) -->
 </suite> <!-- Failed suite [OrangeHRM_Testing_Suite] -->

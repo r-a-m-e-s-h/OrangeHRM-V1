@@ -1,5 +1,8 @@
 package TestCases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -92,8 +95,8 @@ public class BaseClass {
 	@AfterSuite
 	public  void TearDown() 
 	{
-		driver.quit();
-		logger.info("browser is closed");
+		//driver.quit();
+		//logger.info("browser is closed");
 
 	}
 	public void CaptureScreenShot(WebDriver driver , String tname) throws IOException
@@ -103,6 +106,12 @@ public class BaseClass {
 	File dest = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");
 	FileUtils.copyFile(src, dest);
 	
+	}
+	
+	public void KeyBoardRobotClass() throws AWTException
+	{
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_BACK_SPACE);
 	}
 
 

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" class="navigator-link">
-              <span class="suite-name border-passed">OrangeHRM_Testing_Suite</span>
+              <span class="suite-name border-failed">OrangeHRM_Testing_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" class="hide-methods failed suite-OrangeHRM_Testing_Suite"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM_Testing_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" class="show-methods failed suite-OrangeHRM_Testing_Suite"> (show)</a> <!-- show-methods failed suite-OrangeHRM_Testing_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM_Testing_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.MyInfo_TestCase007" class="method navigator-link" hash-for-method="MyInfo_Test">MyInfo_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM_Testing_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,36 +115,6 @@
                       <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" class="show-methods passed suite-OrangeHRM_Testing_Suite"> (show)</a> <!-- show-methods passed suite-OrangeHRM_Testing_Suite -->
                     </span>
                     <div class="method-list-content passed suite-OrangeHRM_Testing_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.AdminPage_TestCase002" class="method navigator-link" hash-for-method="AdminpageTest">AdminpageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.LeavePage_TestCase004" class="method navigator-link" hash-for-method="LeavePageTest">LeavePageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.MyInfo_TestCase007" class="method navigator-link" hash-for-method="MyInfo_Test">MyInfo_Test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.PimPage_TestCase003" class="method navigator-link" hash-for-method="PimTestCase">PimTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.RecuirementPage_TestCase006" class="method navigator-link" hash-for-method="Recuirement_Test">Recuirement_Test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.TimePage_TestCase005" class="method navigator-link" hash-for-method="TimePage_test">TimePage_test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Testing_Suite" title="TestCases.Login_TestCase001" class="method navigator-link" hash-for-method="loginTC">loginTC</a> <!-- method navigator-link -->
@@ -148,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM_Testing_Suite" class="panel OrangeHRM_Testing_Suite">
-          <div class="suite-OrangeHRM_Testing_Suite-class-passed">
+          <div class="suite-OrangeHRM_Testing_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestCases.MyInfo_TestCase007</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -159,55 +143,20 @@
                   <a name="MyInfo_Test">
                   </a> <!-- MyInfo_Test -->
                   <span class="method-name">MyInfo_Test</span>
+                  <div class="stack-trace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;i&quot;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at pageObjects.MyInfoPage.SelectNationality(MyInfoPage.java:127)
+	at TestCases.MyInfo_TestCase007.MyInfo_Test(MyInfo_TestCase007.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Testing_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.PimPage_TestCase003</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PimTestCase">
-                  </a> <!-- PimTestCase -->
-                  <span class="method-name">PimTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Testing_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.RecuirementPage_TestCase006</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Recuirement_Test">
-                  </a> <!-- Recuirement_Test -->
-                  <span class="method-name">Recuirement_Test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Testing_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.AdminPage_TestCase002</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AdminpageTest">
-                  </a> <!-- AdminpageTest -->
-                  <span class="method-name">AdminpageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
+          </div> <!-- suite-OrangeHRM_Testing_Suite-class-failed -->
           <div class="suite-OrangeHRM_Testing_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -219,36 +168,6 @@
                   <a name="loginTC">
                   </a> <!-- loginTC -->
                   <span class="method-name">loginTC</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Testing_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.TimePage_TestCase005</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TimePage_test">
-                  </a> <!-- TimePage_test -->
-                  <span class="method-name">TimePage_test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Testing_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.LeavePage_TestCase004</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LeavePageTest">
-                  </a> <!-- LeavePageTest -->
-                  <span class="method-name">LeavePageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,11 +186,6 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.Login_TestCase001&quot;/&gt;
-      &lt;class name=&quot;TestCases.AdminPage_TestCase002&quot;/&gt;
-      &lt;class name=&quot;TestCases.PimPage_TestCase003&quot;/&gt;
-      &lt;class name=&quot;TestCases.LeavePage_TestCase004&quot;/&gt;
-      &lt;class name=&quot;TestCases.TimePage_TestCase005&quot;/&gt;
-      &lt;class name=&quot;TestCases.RecuirementPage_TestCase006&quot;/&gt;
       &lt;class name=&quot;TestCases.MyInfo_TestCase007&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OrangeHRM Test --&gt;
@@ -286,7 +200,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">OrangeHRM Test (7 classes)</span>
+                <span class="test-name">OrangeHRM Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -312,40 +226,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTC')
-data.setCell(0, 2, 'TestCases.Login_TestCase001')
-data.setCell(0, 3, 2911);
+data.setCell(0, 1, 'MyInfo_Test')
+data.setCell(0, 2, 'TestCases.MyInfo_TestCase007')
+data.setCell(0, 3, 36024);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MyInfo_Test')
-data.setCell(1, 2, 'TestCases.MyInfo_TestCase007')
-data.setCell(1, 3, 2299);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TimePage_test')
-data.setCell(2, 2, 'TestCases.TimePage_TestCase005')
-data.setCell(2, 3, 1483);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AdminpageTest')
-data.setCell(3, 2, 'TestCases.AdminPage_TestCase002')
-data.setCell(3, 3, 1419);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LeavePageTest')
-data.setCell(4, 2, 'TestCases.LeavePage_TestCase004')
-data.setCell(4, 3, 1331);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Recuirement_Test')
-data.setCell(5, 2, 'TestCases.RecuirementPage_TestCase006')
-data.setCell(5, 3, 1256);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'PimTestCase')
-data.setCell(6, 2, 'TestCases.PimPage_TestCase003')
-data.setCell(6, 3, 1138);
+data.setCell(1, 1, 'loginTC')
+data.setCell(1, 2, 'TestCases.Login_TestCase001')
+data.setCell(1, 3, 2759);
 window.suiteTableData['OrangeHRM_Testing_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-OrangeHRM_Testing_Suite">
               </div> <!-- times-div-OrangeHRM_Testing_Suite -->
             </div> <!-- times-div -->
@@ -360,7 +254,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-OrangeHRM_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -369,51 +263,6 @@ return data;
                 <span class="ignored-method-name">Setup</span>
                 <br/>
                 <span class="ignored-method-name">TearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.RecuirementPage_TestCase006</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">Setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.PimPage_TestCase003</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">Setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.AdminPage_TestCase002</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">Setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.TimePage_TestCase005</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">Setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.LeavePage_TestCase004</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">Setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -432,56 +281,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginTC</span>
-                <span class="method-start">15159 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.AdminPage_TestCase002</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">AdminpageTest</span>
-                <span class="method-start">18146 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.PimPage_TestCase003</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">PimTestCase</span>
-                <span class="method-start">19579 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.LeavePage_TestCase004</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">LeavePageTest</span>
-                <span class="method-start">20721 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.TimePage_TestCase005</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TimePage_test</span>
-                <span class="method-start">22055 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.RecuirementPage_TestCase006</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Recuirement_Test</span>
-                <span class="method-start">23545 ms</span>
+                <span class="method-start">12619 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.MyInfo_TestCase007</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">MyInfo_Test</span>
-                <span class="method-start">24810 ms</span>
+                <span class="method-start">15407 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.Login_TestCase001</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">27183 ms</span>
+                <span class="method-start">51527 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
