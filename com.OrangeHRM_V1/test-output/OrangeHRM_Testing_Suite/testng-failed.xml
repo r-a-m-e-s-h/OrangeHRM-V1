@@ -11,6 +11,13 @@
           <include name="MyInfo_Test"/>
         </methods>
       </class> <!-- TestCases.MyInfo_TestCase007 -->
+      <class name="TestCases.Login_TestCase001">
+        <methods>
+          <include name="loginTC"/>
+          <include name="Setup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- TestCases.Login_TestCase001 -->
     </classes>
   </test> <!-- OrangeHRM Test(failed) -->
 </suite> <!-- Failed suite [OrangeHRM_Testing_Suite] -->

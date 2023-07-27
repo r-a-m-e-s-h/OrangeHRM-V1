@@ -23,10 +23,6 @@ public class MyInfo_TestCase007 extends BaseClass {
 		
 		Thread.sleep(3000);
 		
-		KeyBoardRobotClass();
-		
-		
-		
 		mi.EnterFname();
 		Thread.sleep(3000);
 		
@@ -54,12 +50,24 @@ public class MyInfo_TestCase007 extends BaseClass {
 		mi.SetSINno();
 		Thread.sleep(3000);
 		
-		//mi.SelectNationality();
+//		mi.SelectNationality();
+//		Thread.sleep(3000);
+			
+		mi.Setdob();
 		Thread.sleep(3000);
+		
+		mi.SetGender();
+		Thread.sleep(3000);
+		
+		mi.ClickSaveBtn();
+		Thread.sleep(3000);
+		
+		
+		
 		
 		CaptureScreenShot(driver, "MyInfo_TestCase");
 		
-	//	TearDown();
+		TearDown();
 		
 		
 		

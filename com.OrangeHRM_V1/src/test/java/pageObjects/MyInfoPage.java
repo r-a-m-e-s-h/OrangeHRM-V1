@@ -3,6 +3,7 @@ package pageObjects;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -60,13 +61,13 @@ public class MyInfoPage  {
 	WebElement martialStatus;
 	
 	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[1]/div/div[2]/div/div/input")
-	WebElement dob;
+	static WebElement dob;
 	
 	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/label/span")
-	WebElement gender;
+	static WebElement gender;
 	
 	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button")
-	WebElement saveBtn;
+	static WebElement saveBtn;
 	
 	public void ClickmyinfoBtn()
 	{
@@ -122,11 +123,27 @@ public class MyInfoPage  {
 	{
 		SINno.sendKeys("88775654212");
 	}
-	public void SelectNationality()
+	public void SelectNationality() throws InterruptedException
 	{
-//		Select s1 = new Select(nationality);
-//		s1.selectByValue("India");
+//		nationality.sendKeys(Keys.CONTROL + "a" , Keys.BACK_SPACE);
+//		Thread.sleep(2000);
+//		nationality.sendKeys("India");
+		
 	}
-	
+	public void Setdob() throws InterruptedException
+	{
+		dob.sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE);
+		Thread.sleep(2000);
+		
+		dob.sendKeys("1998-08-15");
+	}
+	public void SetGender()
+	{
+		gender.click();
+	}
+	public void ClickSaveBtn()
+	{
+		saveBtn.click();
+	}
 
 }
