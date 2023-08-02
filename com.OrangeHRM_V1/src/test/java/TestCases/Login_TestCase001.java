@@ -24,11 +24,11 @@ public class Login_TestCase001 extends BaseClass {
 		lp.clickLoginBtn();
 		logger.info("login button is clicked");
 		
-		lp.clickProfileBtn();
-		logger.info("profile brn is clicked");
+		//lp.clickProfileBtn();
+		//logger.info("profile brn is clicked");
 		
-		lp.clickLogoutBtn();
-		logger.info("Logout btn is clicked");
+//		lp.clickLogoutBtn();
+//		logger.info("Logout btn is clicked");
 		
 		CaptureScreenShot(driver, "LoginPage");	
 		

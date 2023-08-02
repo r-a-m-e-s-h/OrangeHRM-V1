@@ -9,17 +9,22 @@
 
 <classes>
 
-		 
+		 <!--
 			<class name = "TestCases.Login_TestCase001" />
 			
-			<!--
+			
 			<class name = "TestCases.AdminPage_TestCase002" />
 			<class name = "TestCases.PimPage_TestCase003" />
 			<class name = "TestCases.LeavePage_TestCase004" />
 			<class name = "TestCases.TimePage_TestCase005" />
-			<class name = "TestCases.RecuirementPage_TestCase006" />  -->
-
-			<class name = "TestCases.MyInfo_TestCase007" />
+			<class name = "TestCases.RecuirementPage_TestCase006" /> 
+			<class name = "TestCases.MyInfo_TestCase007" />  
+			<class name = "TestCases.QL_MyTimeSheet_TestCase008" /> 
+			<class name = "TestCases.QL_MyLeavePage_TestCase009" /> 
+			
+			<class name = "TestCases.QL_MyApplyLeave_TestCase0010" /> -->
+			
+			<class name = "TestCases.Login_DDT" />
 
 </classes>
 
