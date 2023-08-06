@@ -18,9 +18,13 @@ public class AdminPage_TestCase002  extends BaseClass {
 		ap.clickadminBtn();
 		logger.info("Admin Button is clicked");
 		
+		
+		
+		
+		
 		CaptureScreenShot(driver, "AdminPage");	
 		
-		
+		TearDown();
 		
 	}
 	

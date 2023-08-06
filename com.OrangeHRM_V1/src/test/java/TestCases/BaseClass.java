@@ -96,8 +96,8 @@ public class BaseClass {
 	@AfterSuite
 	public  void TearDown() 
 	{
-		//driver.quit();
-		//logger.info("browser is closed");
+		driver.quit();
+		logger.info("browser is closed");
 
 	}
 	public void CaptureScreenShot(WebDriver driver , String tname) throws IOException
