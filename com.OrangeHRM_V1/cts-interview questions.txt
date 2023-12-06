@@ -1,0 +1,69 @@
+Write a dynamic xpath that would return the capital city corresponding to a country. For example, if I write ‘Afghanistan’ in the xpath, the xpath should return ‘Kabul’; if I write ‘Albania’, it must return ‘Tirana’ and so on. Use the following website URL:
+https://www.countries-ofthe-world.com/capitals-of-the-world.html
+
+
+//td[text()="Afghanistan"]/following::td[1]
+
+Write a selenium code to verify whether a WebElement is displayed. Check every two seconds for a maximum of 20 seconds
+
+driver.findElement(By.Id("")).is Displayed();
+
+Write a function using Core Java that accepts a List of Strings in its argument. Use an Iterator to Print the last character of each string in the List.
+
+String s = "qwerty";
+char[] c = s.toCharAt();
+String lastTxt="";
+for(int i=c.length;i<5;i++)
+{
+lastTxt =lastTxt=c.get(5);
+}
+syso(lastTxt);
+
+Reverse a string without using inbuilt method
+String text="";
+String rev="";
+Char[] c =text.toCharAt();
+for(int i=c.length-1;i>0;i--)
+{
+rev =rev+c[i];
+}
+syso(rev);
+
+
+
+
+
+@Test(priority=0)
+public void c(){
+               System.out.println("c");
+}
+
+@Test(priority=1)
+public void b(){
+               System.out.println("b");
+}
+
+@Test
+public void a(){
+               System.out.println("a");
+}
+
+@BeforeClass
+public void setup() {
+               System.out.println("Setup");
+}
+
+@BeforeTest
+public void initialize() {
+               System.out.println("Initialize");
+}
+
+output:
+Initialize
+setup
+c
+b
+a
+
+
+

@@ -1,0 +1,81 @@
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test(DataProvider="")
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
+
+
+
+
+browser
+launch amazon
+search mobiles
+print num of mobiles contains samsumg
+
+WebDriver driver;
+
+driver= new ChromeDriver(); 
+WebDrivermanager.ChromeDriver.setup();
+
+driver.get("http://amazon.com");
+
+WebElement srch = driver.findLEment(by.xpath("//input[@id="twotabsearchtextbox"]"));
+srch.sendKeys("mobiles"+keys.Enter);
+
+List<WebElement> samsungMobiles = driver.findElements(by.xpath("//*[contains(text(),'SAMSUNG')]"));
+
+syso(samsungMobiles.size());
+----------------------------------------------------
+table contains empid,firstname,lastname, address,lastworking
+
+pull record lastworkingday = false
+
+select empid from emps where lastworkingday= false;
+--------------------------------------------------
+public class test1{
+public void test()
+{
+syso("Im a global method");
+}
+public test1()
+{
+syso("im inside a cpnstructor");
+}
+public test1(String txt)
+{
+syso(txt);
+}
+}
+public static void main(string[] args)
+{
+test1 t = new test1();
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -30,20 +31,19 @@ import Utilites.ReadConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
+
 	public static WebDriver driver;
-	
+
 	public static Logger logger= Logger.getLogger(BaseClass.class);
-	
-	
-	
+
+
+
 	ReadConfig config = new ReadConfig();
-	
+
 	public String url = config.getApplicationURL();
 	public String userName = config.getUserName();
 	public String pwd = config.getPassword();
-
-
-	//String browser = properties.getProperty("BrowserName");
+	public String browserName = config.getBrowserName();
 
 
 	@BeforeSuite
@@ -53,42 +53,48 @@ public class BaseClass {
 		FileInputStream fis = new FileInputStream("config.properties");
 		Properties properties = new Properties();
 		properties.load(fis);
-		
-		PropertyConfigurator.configure("log4j.properties");
-		
-		String browser =  properties.getProperty("BrowserName");
-		
-//
-//		String url = properties.getProperty("BaseURL");
-//
-//		String LoginName = properties.getProperty("UserName");
-//
-//		String LoginPassword = properties.getProperty("Password");
 
-		if(browser.equalsIgnoreCase("chrome"))
+		PropertyConfigurator.configure("log4j.properties");
+
+		if(browserName.equalsIgnoreCase("chrome1"))
 		{
 			driver = new ChromeDriver();
-			
+
 			WebDriverManager.chromedriver().setup();
 			
+			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-			driver.get(url);
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			logger.info("Url is entered");
 
 		}
-		else if(browser.equalsIgnoreCase("Edge"))
+		else if(browserName.equalsIgnoreCase("Edge"))
 		{
-			
+
 			driver = new EdgeDriver();
 			WebDriverManager.edgedriver().setup();
-			
-	driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-			driver.get(url);
+
+			driver.manage().deleteAllCookies();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			logger.info("Url is entered");
 
+		}
+		else
+		{
+			driver = new ChromeDriver();
+
+			WebDriverManager.chromedriver().setup();
+			
+			driver.manage().deleteAllCookies();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			
+			driver.get(url);
+			logger.info("Url is entered");
 		}
 
 	}
@@ -102,13 +108,13 @@ public class BaseClass {
 	}
 	public void CaptureScreenShot(WebDriver driver , String tname) throws IOException
 	{
-	TakesScreenshot ts = (TakesScreenshot)driver;
-	File src= ts.getScreenshotAs(OutputType.FILE);
-	File dest = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");
-	FileUtils.copyFile(src, dest);
-	
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File src= ts.getScreenshotAs(OutputType.FILE);
+		File dest = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");
+		FileUtils.copyFile(src, dest);
+
 	}
-	
+
 	public void KeyBoardRobotClass() throws AWTException
 	{
 		Robot robot = new Robot();

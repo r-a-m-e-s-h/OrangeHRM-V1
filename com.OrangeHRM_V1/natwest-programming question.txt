@@ -1,0 +1,11 @@
+
+
+public static void main(String[] args)
+{
+int first=10;
+int second=20;
+first=first-second;//-10
+second=first+second;//10
+first=second-first;//20
+System.out.println("The swapped value of first is : "+first+"The swapped value of second is : "+second);
+}

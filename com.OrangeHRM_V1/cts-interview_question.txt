@@ -1,0 +1,21 @@
+Thenmoezi Srinivasan says:
+how to fetch cell value of a particular ith row & jth column of dynamic table
+
+
+String str ="Automation";
+char[] c = str.tocharArray();
+for(int i=0;i<str.length;i++)
+{
+for(int j=0;j<str.length;j++)
+{
+if(c[i]==c[j])
+{
+syso(c[j])
+break;
+}
+}
+
+
+
+
+

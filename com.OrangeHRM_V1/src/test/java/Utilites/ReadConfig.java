@@ -49,6 +49,12 @@ public class ReadConfig {
 		return pwd;
 	}
 	
+	public String getBrowserName()
+	{
+		String browser = properties.getProperty("BrowserName");
+		return browser;
+	}
+	
 	
 	
 	

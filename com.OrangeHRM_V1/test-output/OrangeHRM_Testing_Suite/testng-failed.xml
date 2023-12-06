@@ -4,13 +4,13 @@
   <test thread-count="5" name="OrangeHRM Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.Login_DDT">
+      <class name="TestCases.Login_TestCase001">
         <methods>
-          <include name="Login_Test" invocation-numbers="2 3"/>
           <include name="Setup"/>
+          <include name="loginTC"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- TestCases.Login_DDT -->
+      </class> <!-- TestCases.Login_TestCase001 -->
     </classes>
   </test> <!-- OrangeHRM Test(failed) -->
 </suite> <!-- Failed suite [OrangeHRM_Testing_Suite] -->
